@@ -70,7 +70,21 @@ arr2.forEach((e) => {
 
 
 bankname = "ISD bank";
-let bankname = "ISDB Bank";
+var bankname = "ISDB Bank"; // we can use only var like this in hoisting, can't use let and const
 
 console.log(bankname);
 
+//Function
+banktest();
+
+//Function Declaration we can use function declaration as hoisting in js
+function banktest(){
+    console.log("ISDB Saudi");
+}
+
+//Function Expression we can't use function Expression as hoisting in js
+const testbank = () =>{
+    console.log("ISDB ITFC")
+}
+
+testbank();
